@@ -1,0 +1,44 @@
+#main-content h1{
+    text-align:center;
+    padding-top:2.5%;
+    text-decoration:underline;
+}
+
+#main-content .content{
+    display:inline-block;
+    width: 100%;
+}
+
+
+#introduction, #faq .blurb, #resources .blurb, #courses .blurb{
+    text-align:center;
+    padding-left:25%;
+    padding-right:25%;
+}
+
+#introduction p, #faq p{
+    padding-top:2.5%;
+}
+
+#questions, #years{
+    width:55%;
+    margin:auto;
+}
+
+#cards-pane{
+    width: 80%;
+    margin:auto;
+}
+
+.card_association, .card_usage, .course_id, .reso{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.col{
+    overflow: auto;
+}
+
+.reso{
+    text-decoration: underline;
+}

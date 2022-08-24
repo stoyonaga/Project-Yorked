@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Project: Yorked</title>
+        <meta charset = "UTF-8">
+        <!-- Mobile Rendering -->
+        <meta name = "viewport" content = "width=device-width" initial-scale=1.0>
+        <!-- Internal File(s) -->
+        <link href = "main.css" type = "text/css" rel = "stylesheet">
+        <script src = "source.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    </head>
+    <body>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class = "container-fluid">
+                <a class = "navbar-brand" href = "#">Project: Yorked</a>
+                <div class = "collapse navbar-collapse" id = "navbarNav">
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item"><a class = "nav-link active" href = "#">Home</a></li>
+                        <li class = "nav-item"><a class = "nav-link" href = "#introduction">Introduction</a></li>
+                        <li class = "nav-item"><a class = "nav-link" href = "#faq">Frequently Asked Questions</a></li>
+                        <li class = "nav-item"><a class = "nav-link" href = "#resources">Important Resources</a></li>
+                        <li class = "nav-item dropdown">
+                            <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdown" role = "button" data-bs-toggle="dropdown" aria-expanded = "false">
+                                Academic Year
+                            </a>
+                            <ul class = "dropdown-menu" aria-labelledby = "navbarDropdown">
+                                <li><a class = "dropdown-item" href = "#y1">Year 1</a></li>
+                                <li><a class = "dropdown-item" href = "#y2">Year 2</a></li>
+                                <li><a class = "dropdown-item" href = "#y3">Year 3</a></li>
+                                <li><a class = "dropdown-item" href = "#y4">Year 4</a></li>
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-interval = "false">
+            <div class = "carousel-indicators">
+                <button type = "button" data-bs-target = "#carouselExampleInterval" data-bs-slide-to = "0" class = "active" aria-current = "true"></button>
+                <button type = "button" data-bs-target = "#carouselExampleInterval" data-bs-slide-to = "1"></button>
+                <button type = "button" data-bs-target = "#carouselExampleInterval" data-bs-slide-to = "2"></button>
+                <button type = "button" data-bs-target = "#carouselExampleInterval" data-bs-slide-to = "3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class = "carousel-caption d-none d-md-block">
+                    <h1>Welcome!</h1>
+                </div>
+                <img src="images/carousel/image1.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class="carousel-item">
+                <img src="images/carousel/image2.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class="carousel-item">
+                <img src="images/carousel/image3.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+              <div class = "carousel-item">
+                <img src = "images/carousel/image4.jpg" class = "d-block w-100" alt = "...">
+              </div>
+            
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Content Begins Here -->
+          <div id = "main-content">
+            <div id = "introduction" class = "bg-dark text-light content">
+              <h1>Introduction</h1>
+              <p>The goal of this project is to help incoming Computer Science Students at York University find success in their academic careers.</p>
+              <p>The site aims to accomplish this by providing answers to frequently asked questions, in addition to connecting students to very important resources and contacts.
+                If at any time, you would like to contribute to this project, please reach out to Shogo!</p>
+            </div>
+
+            <div id = "faq" class = "bg-light text-dark content">
+              <h1>Frequently Asked Questions</h1>
+              <p class = "blurb">Below, you will find answers to commonly asked questions among first-year Lassonde students.</p>
+              
+              <div id = "questions">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Q1) Where can I find my course content / materials?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Your Professors will almost always post your course content through the following avenues.</p>
+                        <ul>
+                          <li><a href = "https://eclass.yorku.ca" target = "_blank">eClass</a></li>
+                          <li><a href = "https://www.eecs.yorku.ca/course_archive/" target = "_blank">eClass Archive</a></li>
+                        </ul>
+                        <p>With regards to your materials, you can find required textbooks and lab materials through the <a href = "https://bookstore.yorku.ca/" target = "_blank">bookstore</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Q2) I have enrolled in my courses. What should I do if they're not appearing on eClass!?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Your courses will appear on eClass as late as the first day of classes. Do note that it updates every 24 hours.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Q3) I need some help finding out where my classes are. Where can I see a map of the Keele campus? 
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>You can access a map of the Keele campus <a href = "https://acmaps.info.yorku.ca/campus-maps/" target = "_blank">here</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Q4) I would like an on-campus job. Where should I be looking for these positions?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>You can find the York job listings on <a href = "https://jobs-ca.technomedia.com/yorkuniversity/?" target = "_blank">YU Hire</a>.</p>
+                        <p>Do note that you must complete your <a href = "https://sfs.yorku.ca/aid/sfp" target = "_blank">Student Financial Profile</a> in order to be applicable for a Work/Study position.</p>
+
+                        <p class = "text-danger">As an additional recommendation, you should familiarize yourself with the <a href = "https://www.ontario.ca/document/your-guide-employment-standards-act-0" target = "_blank">Employment Standards Act</a>.
+                        Know your rights, and make sure that you're working in a fair and safe environment.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Q5) I require academic advising. Where can I get some help? 
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>As a Lassonde student, you can connect with an Academic Advisor <a href = "https://lassonde.yorku.ca/student-life/connect-with-an-academic-advisor" target = "_blank">here</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        Q6) Where can I find my exam schedule?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>You can find your exam schedule through the <a href = "https://registrar.yorku.ca/" target = "_blank">registrar</a> page, when it is available.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        Q7) Do I only have to pay the $300 deposit fee once?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Yes, you only need to pay the $300 deposit fee once, in your first year.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        Q8) How do I opt out of the Health and Dental Insurance?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Please check the <a href = "http://www.yfs.ca/healthplan" target = "_blank">YFS Health and Dental Page</a>. It will tell you when the opt-out window opens, as well as how to opt out. </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingNine">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        Q9) How can I get involved with clubs on campus?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Please refer to the <a href = "http://www.yfs.ca/clubsdirectory" target = "_blank">YFS Clubs Directory</a>! In the first week of classes, clubs will also advertise themselves near Vari Hall!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTen">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                        Q10) I'm an upper year student. Are there any resources that can show me how to SSH / use the remote lab environment?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Yes, as a matter of fact, there is a wiki for <a href = "https://wiki.eecs.yorku.ca/dept/tdb/" target = "_blank">EECS technical support</a>! </p>
+                        <p>While you can SSH using a temrinal such as Yakuake or Command Prompt, I would recommend connecting through Visual Studio Code and the <span class = "text-primary">Remote - SSH plugin</span>!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEleven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                        Q11) I heard that York students get Microsoft Office applications for free. How do I unlock this service?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body bg-dark text-light">
+                        <p>Yes, you do get access to the Microsoft Suite while you are a student! Please refer to <a href = "https://www.yorku.ca/uit/faculty-staff-services/free-microsoft-office-365-education-software/" target = "_blank">this tutorial</a> to get started.</p>
+                        <p>On another note, I recommend that you check out this page to learn about other <a href = "https://www.yorku.ca/uit/student-services/software/" target = "_blank">software services</a> that are offered for York students!</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+                  <!-- <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading__">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse__" aria-expanded="false" aria-controls="flush-collapse__">
+                        QX) 
+                      </button>
+                    </h2>
+                    <div id="flush-collapse__" class="accordion-collapse collapse" aria-labelledby="flush-heading__" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        Waow
+                      </div>
+                    </div>
+                  </div>-->
+                </div>
+              </div>
+              <br>
+            </div>
+            
+            <div id = "resources" class = "bg-dark text-light content">
+              <h1>Resources</h1>
+              <p class = "blurb">Please refer to the following cards for very important resources that York University and the Lassonde School of Engineering offer!</p>
+
+              <div id = "cards-pane">
+                <div class = "row row-cols-1 row-cols-md-4 g-4">
+                <!-- Card Content -->
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/red_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Registrar Page</h5>
+                        <p><span class = "card_association">Type:</span> Administrative</p>
+                        <p><span class = "card_usage">Usage:</span> High</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://registrar.yorku.ca/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/red_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Student Financial Services</h5>
+                        <p><span class = "card_association">Type:</span> Administrative</p>
+                        <p><span class = "card_usage">Usage:</span> High</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://sfs.yorku.ca/fees/your-student-account" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/red_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Academic Advising</h5>
+                        <p><span class = "card_association">Type:</span> Administrative</p>
+                        <p><span class = "card_usage">Usage:</span> High</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://lassonde.yorku.ca/student-life/connect-with-an-academic-advisor" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/red_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Student Financial Profile</h5>
+                        <p><span class = "card_association">Type:</span> Administrative</p>
+                        <p><span class = "card_usage">Usage:</span> Dependent</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://sfs.yorku.ca/aid/sfp" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/blue_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">York Courses</h5>
+                        <p><span class = "card_association">Type:</span> Academic</p>
+                        <p><span class = "card_usage">Usage:</span> High</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/blue_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Degree Progress Report</h5>
+                        <p><span class = "card_association">Type:</span> Academic</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://myacademicrecord.students.yorku.ca/degree-progress-report" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/blue_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Academic Calendar</h5>
+                        <p><span class = "card_association">Type:</span> Academic</p>
+                        <p><span class = "card_usage">Usage:</span> High</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://calendars.students.yorku.ca/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/blue_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">York SPARK</h5>
+                        <p><span class = "card_association">Type:</span> Academic</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://spark.library.yorku.ca/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/purple_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Excel Lassonde</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://www.excellassonde.ca/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/purple_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Bethune PASS</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://www.yorku.ca/colleges/bethune/get-help/pass/about-pass/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/purple_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Math and Stats Lab</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://www.yorku.ca/wp-content/uploads/sites/44/2021/02/MathStatsLab.pdf" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/purple_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">YU Hire</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://jobs-ca.technomedia.com/yorkuniversity/?" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/green_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">York Counselling</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://counselling.students.yorku.ca/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/green_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Writing Center</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://www.yorku.ca/laps/writing-centre/" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/green_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Connect Lassonde</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://connect.lassonde.yorku.ca/home_login" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "col">
+                    <div class = "card text-dark">
+                      <img src = "images/card/green_gradient.jpg" class = "card-img-top" alt = "">
+                      <div class = "card-body">
+                        <h5 class = "card-title">Peer Helper</h5>
+                        <p><span class = "card_association">Type:</span> Personal Development</p>
+                        <p><span class = "card_usage">Usage:</span> Recommended</p>
+                      </div>
+                      <div class = "card-body">
+                        <a href = "https://lassonde.yorku.ca/student-life/peer-helpers" class = "card-link" target = "_blank">Access Here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id = "courses" class = "bg-light text-dark content">
+              <h1>Courses</h1>
+              <p class = "blurb">Each computer science course, divided between the year level gives resources and anecdotal experience.</p>
+              <div id = "years">
+                <div class="accordion accordion-flush" id="accordionFlushYear">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-YearOne">
+                      <button id = "y1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseYearOne" aria-expanded="false" aria-controls="flush-collapseYearOne">
+                      Year 1
+                      </button>
+                    </h2>
+                    <div id="flush-collapseYearOne" class="accordion-collapse collapse" aria-labelledby="flush-YearOne" data-bs-parent="#years">
+                      <div class="accordion-body">
+                        <ol>
+                          <li class = "course_id">EECS 1001 - Research Directions in Computing</li>
+                          <ul>
+                            <li>This course introduces students to many computational research avenues. Typically, the Professor will invite many guest speakers.</li>
+                            <li>Assessments usually come in the form of quizzes and short essays.</li>
+                          </ul>
+                          <li class = "course_id">EECS 1012 - Introduction to Computing: A Net-Centric Approach</li>
+                          <ul>
+                            <li>This course introduces students to writing front and back-end web applications. You will learn HTML, CSS, Javascript, Ajax, and PHP.</li>
+                            <li>Assessments usually come in the form of assignments, lab tests, midterms, and a final exam.</li>
+                          </ul>
+                          <li class = "course_id">EECS 1019 - Discrete Mathematics for Computer Science</li>
+                          <ul>
+                            <li>This course introduces students to proofs through cases, counter-example, contradiction, and induction. <span class = "text-danger"> This is an extremely important and rather intense course. You are highly encouraged to complete all applicable textbook problems in addition to seeking out other forms of practice.</span></li>
+                            <li>Assessments usually come in the form of assignments, midterms, and a final exam.</li>
+                          </ul>
+                          <li class = "course_id">EECS 1022 - Introduction for Object Oriented Programming</li>
+                          <ul>
+                            <li>This course introduces students to the concept Object Oriented Programming. You will use the <span class = "text-primary">Eclipse IDE</span>, and write programs in <span class = "text-primary">Java</span>.</li>
+                          </ul>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-YearTwo">
+                      <button id = "y2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseYearTwo" aria-expanded="false" aria-controls="flush-collapseYearTwo">
+                      Year 2
+                      </button>
+                    </h2>
+                    <div id="flush-collapseYearTwo" class="accordion-collapse collapse" aria-labelledby="flush-YearTwo" data-bs-parent="#years">
+                      <div class="accordion-body">
+                        <ol>
+                          <li class = "course_id">EECS 2001 - Introduction to the Theory of Computation</li>
+                          <ul>
+                            <li>This course introduces students to the logic behind computing. You will continue to develop your proofs and theoretical thinking skills.</li>
+                            <li>You will learn how to design finite automata and regular expressions.</li>
+                            <li>I found this course to be very fun. <span class = "text-danger"> This course can be rather heavy. You are encouraged to complete all of the textbook readings, homework, and seek out other avenues of practice. You are highly encouraged to attend every tutorial.</span></li>
+                            <li>Assessments usually come in the form of assignments, midterms, and a final exam.</li>
+                            <li>While there is no programming in this course, per se, you can test your understanding of the material by implementing concepts. I personally tested my knowledge through Java and Python.</li>
+                          </ul>
+                          <li class = "course_id">EECS 2011 - Fundamentals of Data Structures</li>
+                          <ul>
+                            <li>This course introduces students to key data structures, sorting algorithms, and mathematical notation behind computing.</li>
+                            <li>You will be using <span class = "text-primary">Java</span> to complete your programming assignments.</li>
+                            <li>It is highly recommended that you practice your understanding of this course by solving <span class = "text-primary">LeetCode</span> problems.</li>
+                            <li>Assessments usually come in the form of assignments, midterms, and a final exam.</li>
+                          </ul>
+                          <li class = "course_id">EECS 2021 - Computer Organization</li>
+                          <ul>
+                            <li>This course introduces students to how high-level programming languages are interpreted at the low-level. You will also learn about Computer Hardware and how all the pieces communicate and work together.</li>
+                            <li>You will write programs using <span class = "text-primary">Assembly (RISC-V)</span>, and design circuits through <span class = "text-primary">Icarus Verilog</span>.</li>
+                            <li>This course has a particularly high workload in comparison to your other second year courses. You are advised to always complete the labs early, and complete all course homework and readings to ensure understanding of the core theory.</li>
+                          </ul>
+                          <li class = "course_id">EECS 2030 - Advanced Object Oriented Programming</li>
+                          <ul>
+                            <li>This course is an extension of EECS 1022. You will continue to use <span class = "text-primary">Java</span>.</li>
+                            <li>Rather than just focusing on Object Oriented Programming, you will begin to learn concepts such as Inheritance, Polymorphism, Unit Testing, and Sorting.</li>
+                          </ul>
+                          <li class = "course_id">MATH 2030 - Elementary Probability</li>
+                          <ul>
+                            <li><span class = "text-danger">Note: This course is only mandatory for the Honours Degree!</span></li>
+                            <li>Assessments usually come in the form of assignments, midterms, and a final exam.</li>
+                            <li>It is absolutely integral that you practice every textbook question that you can. This course relies in constant practice to achieve success on the assessments.</li>
+                            <li>You should be very familiar with integration from <span class = "text-primary">MATH 1310</span>, as it is assumed knowledge in the second half of this course.</li>
+                          </ul>
+                          <li class = "course_id">EECS 2031 - Software Tools</li>
+                          <ul>
+                            <li>This course introduces students to writing programs in <span class = "text-primary">C</span> and <span class = "text-primary">Bash</span>.</li>
+                            <li>Assessments usually come in the form of assignments, lab tests, midterms, and a final exam.</li>
+                            <li>If you have already taken EECS 2011, you can use LeetCode to practice your C skills. Additionally, you can use CodingBat as well.</li>
+                            <li>One of the key takeaways from this course is becoming proficient at using Linux. It is recommended that you either <span class = "text-primary">ssh</span> into the red servers to practice these concepts, or install WSL2 on your work computer.</li>
+                          </ul>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-YearThree">
+                      <button id = "y3" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseYearThree" aria-expanded="false" aria-controls="flush-collapseYearThree">
+                      Year 3
+                      </button>
+                    </h2>
+                    <div id="flush-collapseYearThree" class="accordion-collapse collapse" aria-labelledby="flush-YearThree" data-bs-parent="#years">
+                      <div class="accordion-body">
+                        <ol>
+                          <li class = "course_id">EECS 3101 - Design and Analysis of Algorithms</li>
+                          <ul>
+                            <li><span class = "text-danger">This course has a particularly high workload. It is highly encouraged that you complete all of the textbook readings, problems, and seek out additional avenues of practice.</span></li>
+                            <li>In this course, you will learn how to design algorithms, in addition to proving their correctness.</li>
+                            <li>This course relies on the completion and understanding of EECS 1019, EECS 2011. It is highly encouraged that you review this material prior to taking the course.</li>
+                            <li>LeetCode is very helpful to do while taking this course. It helps you think in terms of designing optimal algorithms, while also using data structures in, "real" applications.</li>
+                            <li><a href = "https://ianparberry.com/books/free/#:~:text=Problems%20on%20Algorithms%20%2C%20Second%20Edition,portion%20of%20the%20candidacy%20exam." target = "_blank">Problems on Algorithms (1995)</a> by Ian Parberry is a great resource for learning and practicing this core material.</li>
+                            <li>I personally found MIT OpenCourseWare videos for this course to be very helpful.</li>
+                          </ul>
+                          <li class = "course_id">EECS 3221 - Operating System Fundamentals</li>
+                          <ul>
+                            <li>In this course, you will learn how your Operating System functions, while communicating with hardware.</li>
+                            <li>You will explore the concepts of Processes, Threads, Kernel Space, User Space, Process / Memory Algorithms, and Virtual Memory</li>
+                            <li><span class = "text-danger">Do note that the assignments in this course are written in C. It is assumed that you are well-versed in this language, in addition to using Linux.</span></li>
+                            <li>You may find this <a href = "https://www.youtube.com/playlist?list=PL6KMWPQP_DM-7tMNjUa7X2zGrc8jipPeI" target = "_blank">YouTube Playlist</a> by Ghassan Shobaki to be very helpful.</li>
+                            <li>As always, you are highly encouraged to read the textbook and complete all applicable homework questions. Reading ahead in this course helps a lot with lecture comprehension.</li>
+                          </ul>
+                          <li class = "course_id">EECS 3311 - Software Design </li>
+                          <ul>
+                            <li>In this course, students will be introduced to Software Design Patterns. You will also learn about the Software Development Life Cycle!</li>
+                            <li>The programming language for this course will depend on the instructor. As of writing this section, the course has been taught using Python, Java, Eiffel, and Fullstack Web Programming.</li>
+                            <li>There is no assigned textbook. I highly recommend this <a href = "https://www.youtube.com/watch?v=v9ejT8FO-7I&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc" target = "_blank">YouTube Playlist</a> by Christopher Okhravi.</li>
+                            <li>There is a final project for this course. Depending on the instructor, it may be a web application, contributing to an open-source project, or implementing complex algorithms and writing unit tests.</li>
+                          </ul>
+                          <li class = "course_id">EECS 3421 - Introduction to Database Systems</li>
+                          <ul>
+                            <li>In this course, students will learn how to design a relational database, and implement it using <span class = "text-primary">PostgreSQL</span>. You will to write queries and express your thinking through the use of relational algebra.</li>
+                            <li>You will have to <span class = "text-primary">ssh</span> into the red servers in order to complete and test your assignment solutions.</li>
+                          </ul>
+                          <li class = "course_id">EECS 3461 - User Interfaces</li>
+                          <ul>
+                            <li>In this course, students will learn how to design a good user interface. You will learn about what factors affect our perception of a good versus bad design decision.</li>
+                            <li>You will use <span class = "text-primary">Miro</span> and <span class = "text-primary">Figma</span> to complete the UI design projects.</li>
+                          </ul>
+                          <li class = "course_id">EECS 3482 - Introduction to Computer Security</li>
+                          <ul>
+                            <li>In this course, students will learn about the elementary concepts of Computer Security. You will investigate malware, hacking, steganography, and cryptography in depth.</li>
+                            <li>The labs for this course don't use a programming language. You will learn to use tools such as <span class = "text-primary">Kali Linux</span> and <span class = "text-primary">Command Prompt</span>.</li>
+                          </ul>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-YearFour">
+                      <button id = "y4" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseYearFour" aria-expanded="false" aria-controls="flush-collapseYearFour">
+                      Year 4
+                      </button>
+                    </h2>
+                    <div id="flush-collapseYearFour" class="accordion-collapse collapse" aria-labelledby="flush-YearFour" data-bs-parent="#years">
+                    <div class="accordion-body">
+                      <ol>
+                        <li class = "course_id">EECS 4161 - Mathematics of Cryptography</li>
+                        <ul>
+                          <li>In this course, students will be introduced to many Encryption and Decryption algorithms. Such examples include the Caesar Cipher, Homophonic Substitution Cipher, RSA, and Diffie-Hellman Key Exchange.</li>
+                          <li>Programming is required in this course. You are highly encouraged to use <span class = "text-primary">SageMath</span></li>
+                        </ul>
+                      </ol>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+          <div class = "alert alert-primary alert-dismissible fade show" role = "alert">
+            <p><strong>This website is currently being maintained by Shogo</strong></p>
+            <p>Have any additional questions?</p>
+            <ul>
+              <li>If you are a <strong>mentee</strong>, please reach out to Shogo over email.</li>
+              <li>If you are not in Shogo's cohort of mentees, please reach out to him over <a href = "https://ca.linkedin.com/in/shogo-toyonaga-475516145" target = "_blank">LinkedIn</a>!</li>
+            </ul>
+            <button type = "button" class = "btn-close" data-bs-dismiss = "alert" aria-label = "Close"></button>
+            
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
